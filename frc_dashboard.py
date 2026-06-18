@@ -70,7 +70,7 @@ ax.spines["bottom"].set_visible(False)
 st.pyplot(fig)
 st.divider()
 st.markdown("""
-### Insight
+### Insight🤔
 
 Based off the data on each category it is clear Killer Kardinals 2 is performing poorly due to it's low Teleop points. The top teams are doing better because of their teleop scoring,if Killer Kardinals can improve it's offense capability, the team will have a greater chance at ranking higher. Another thing Killer Kardinals 2 needs to improve on is Auto points,it isn't the highest priority but it does add up when we see the total points. Lastly, Killer Kardinals 2 is the only team that has negative foul points, essentially giving the opposing team extra points. """
 )
