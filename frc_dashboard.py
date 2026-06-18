@@ -25,7 +25,7 @@ st.set_page_config(
     page_title="FRC Dashboard",
     layout="wide"
     )
-st.title("Mount Olive FIRST Robotics Team Analysis Dashboard")
+st.title("Mount Olive FIRST Robotics Team Analysis Dashboard🦿")
 st.write("Compare Killer Kardinals 2 Againist Top Teams")
 
 metric = st.selectbox("Select a Scoring Category",
@@ -39,7 +39,7 @@ metric = st.selectbox("Select a Scoring Category",
                           "Total Points",
                           ]
                       )
-st.subheader("Data Table")
+st.subheader("Data Table🗂️")
 
 st.dataframe(
     data[["Team Name", metric]]
@@ -47,7 +47,7 @@ st.dataframe(
 sorted_data = data.sort_values(by=metric, ascending=False)
 fig, ax = plt.subplots(figsize=(10,5))
 st.divider()
-st.subheader("Data Chart")
+st.subheader("Data Chart📊")
 colors = [
     "#1B1F3B",
     "#3D348B",
