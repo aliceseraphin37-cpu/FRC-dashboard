@@ -44,10 +44,10 @@ st.subheader("Data Table🗂️")
 st.dataframe(
     data[["Team Name", metric]]
     )
-sorted_data = data.sort_values(by=metric, ascending=False)
-fig, ax = plt.subplots(figsize=(10,5))
 st.divider()
 st.subheader("Data Chart📊")
+sorted_data = data.sort_values(by=metric, ascending=False)
+fig, ax = plt.subplots(figsize=(10,5))
 colors = [
     "#1B1F3B",
     "#3D348B",
