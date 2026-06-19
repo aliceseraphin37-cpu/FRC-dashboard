@@ -40,13 +40,12 @@ metric = st.selectbox("Select a Scoring Category",
                           ]
                       )
 st.subheader("Data Table🗂️")
-
+sorted_data = data.sort_values(by=metric, ascending=False)
 st.dataframe(
-    data[["Team Name", metric]]
+    sorted_data[["Team Name", metric]]
     )
 st.divider()
 st.subheader("Data Chart📊")
-sorted_data = data.sort_values(by=metric, ascending=False)
 fig, ax = plt.subplots(figsize=(10,5))
 colors = [
     "#1B1F3B",
